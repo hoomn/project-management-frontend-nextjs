@@ -22,9 +22,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="">
         <Header />
-        <Container className="my-5" style={{ minHeight: "calc(100vh - 256px)" }}>
-          <Providers>{children}</Providers>
-        </Container>
+        <main>
+          <Container className="my-5" style={{ minHeight: "calc(100vh - 256px)" }}>
+            <Providers>{children}</Providers>
+          </Container>
+        </main>
         <Footer />
       </body>
     </html>
